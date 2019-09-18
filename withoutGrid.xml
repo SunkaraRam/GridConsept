@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel= "tests">
+  <test thread-count="5" name="FireboxBrowser">
+  <parameter name="browser" value="Firefox"></parameter>
+    <classes>
+      <class name="multiplE.GridConcept"/>
+      <class name="multiplE.ParallelTestExecution"></class>
+    </classes>
+  </test> 
+  <test name="ChromeBrowser">
+  <parameter name="browser" value="Chrome"></parameter>
+  <parameter name="uid" value="Admin"></parameter>
+  <parameter name="pwd" value="Qedge123!@#"></parameter>
+  <classes>
+  
+  	<class name="multiplE.GridConcept"></class>
+  	<class name="multiplE.ParallelTestExecution"/>
+  
+  </classes>
+  </test>
+ 
+  
+  
+</suite> <!-- Suite -->

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <test thread-count="5" name="FireboxBrowser(failed)" parallel="tests">
+    <parameter name="browser" value="Firefox"/>
+    <classes>
+      <class name="multiplE.GridConcept">
+        <methods>
+          <include name="main"/>
+          <include name="login"/>
+          <include name="logout"/>
+        </methods>
+      </class> <!-- multiplE.GridConcept -->
+      <class name="multiplE.ParallelTestExecution">
+        <methods>
+          <include name="clos"/>
+          <include name="tc_01"/>
+          <include name="Testing143"/>
+          <include name="Testing"/>
+        </methods>
+      </class> <!-- multiplE.ParallelTestExecution -->
+    </classes>
+  </test> <!-- FireboxBrowser(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [package]" parallel="tests">
+  <test thread-count="5" name="ChromeTest(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="multiplE.ParallelTestExecution1">
+        <methods>
+          <include name="tc_05"/>
+          <include name="tc_06"/>
+          <include name="tc_04"/>
+        </methods>
+      </class> <!-- multiplE.ParallelTestExecution1 -->
+      <class name="multiplE.ParallelTestExecution">
+        <methods>
+          <include name="clos"/>
+          <include name="tc_01"/>
+          <include name="Testing"/>
+        </methods>
+      </class> <!-- multiplE.ParallelTestExecution -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+  <test thread-count="5" name="FireFoxTest(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="multiplE.ParallelTestExecution1">
+        <methods>
+          <include name="tc_05"/>
+          <include name="tc_06"/>
+          <include name="tc_04"/>
+        </methods>
+      </class> <!-- multiplE.ParallelTestExecution1 -->
+      <class name="multiplE.ParallelTestExecution">
+        <methods>
+          <include name="clos"/>
+          <include name="tc_01"/>
+          <include name="Testing"/>
+        </methods>
+      </class> <!-- multiplE.ParallelTestExecution -->
+    </classes>
+  </test> <!-- FireFoxTest(failed) -->
+</suite> <!-- Failed suite [package] -->
